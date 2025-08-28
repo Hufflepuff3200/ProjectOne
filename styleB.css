@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    font-size: 40px;
+    white-space: nowrap;    
+    overflow-x: auto;        
+}
+
+.box {
+    width: 100px;
+    height: 150px;
+    background-color: #eeeff2;
+    border-left: 10px dotted #D0D0FF;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;    
+    color: black;
+    margin-right: 10px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+body > .box:nth-child(-n+5) {
+    float: left;
+    position: relative;
+}
+
+body > .box:last-child {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 0;
+}
+
+.box:hover {
+    background-color: yellow;
+    color: goldenrod;
+    cursor: pointer;
+}
